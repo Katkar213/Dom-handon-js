@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display:flex;
+            gap:10px;
+            flex-direction: row;
+
+        }
+        body{
+            background-image:linear-gradient(skyblue,lightgrey);
+        }
+        .child{
+            height:100px;
+            width:200px;
+            border:2px solid black;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        table tr td{
+       border: 2px solid black;
+       text-align: center;
+       padding: 5px;
+    
+        }
+        th{
+            border: 2px solid black;
+          
+    
+        }
+    </style> 
+</head>
+<body>
+    <h3>Q1. Write the code to access element which is having id as "text"</h3>
+    <p>ANS : let a=document.getElementById("text")
+        console.log(a)
+        output: Element having id as text will be stored in variable a.
+    </p>
+
+    <h3>Q2. Write the code to access element which is having tag as "h1"</h3>
+    <p>
+        ANS : let a=document.getElementsByTagName("h1")
+        console.log(a)
+        output: Elements having tag name as h1 will be stored in variable a in an array format/Element collection.  
+    </p>
+
+    <h3>Q3. Write the code to access element which is having class as "box"</h3>
+    <p>
+        ANS : let a=document.getElementsByClassName("box")
+        console.log(a)
+        output: Elements having class name as box will be stored in variable a in an array format/Element collection.  
+    </p>
+
+    <h3> Q4. Hello in h1 tag
+
+        Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</h3>
+        
+    <p id="hello">
+        ANS : Hello
+    </p>
+
+    <h3>Q5. Create an HTML page having content as Hello world and a button named 
+        Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</h3>
+        <p>ANS:</p>
+    <button onclick="replace()">Replace Text</button>
+    <h1 class="replace">Hello World</h1>
+
+    <h3>
+       Q6. Hello in h1 tag
+
+Add one style attribute and give text color as red and id attribute and give the id value as "heading" in the above given h1
+ tag using DOM functions"
+    </h3>
+    
+      <p>ANS:</p>  <h1 id="addattributes">Hello</h1>
+
+
+    <h3>Q7. Create three cards on HTML page and arrange them using flex property in row or horizontal direction and 
+    also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement \
+    should be changed to vertical direction.</h3>
+    <p>ANS:</p>
+            <div class="parent">
+                <div class="child"></div>
+                <div class="child"></div>
+                <div class="child"></div>
+                <div class="child"></div>
+            </div>  
+      <button onclick="changedirection()">change direction</button>
+      <h3>Q8.What’s the difference between window vs document</h3>
+      <br>
+      <table>
+        <tr>
+        <th>Document</th>
+        <th>window</th>
+    </tr>
+
+        <tr>
+        <td> It is the top most object and outermost
+             element of the object hierarchy .</td>
+        <td>Each HTML document that gets loaded into a 
+            window becomes a document object. The document contains the contents of the page. Using document object, JavaScript can modify, add and delete the HTML elements, attributes CSS styles in the page</td>
+        </tr>
+
+            <tr>
+                
+                <td>The window object represents a window/tab containing a DOM document where as document object is property of window object that points to the DOM document loaded in that window.
+       </td>
+       
+        <td>You can access a document object either using window.document property or using document object directly as window is global object</td>
+    </tr>
+   <tr><td>window.open() opens a new tab or window</td>
+   <td>document.open() creates a blank document within the window.</td>
+</tr>
+       
+      </table>
+
+      <h3>Q9.Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</h3>
+
+      <p>ANS:</p>
+      <h2 id="starting"></h2>
+      
+    <h3>Q.10 <a href="https://katkar213.github.io/guess-number-js/">https://katkar213.github.io/guess-number-js/</a> </h3> 
+      
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
